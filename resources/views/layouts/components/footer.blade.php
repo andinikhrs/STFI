@@ -1,5 +1,15 @@
+<style>
+  .main-footer{
+    width: 80%;
+    height: 5px;
+}
+</style>
 <footer class="main-footer">
-    <strong>&copy; Sarana Prasarana 2022 Sekolah Tinggi Farmasi Indonesia | All Rights Reserved | stfindonesia@gmail.com | 022-7566484 / 08112160354</strong>
+    <strong>&copy; Sarana Prasarana 2022 
+      <a href="https://www.stfi.ac.id/">Sekolah Tinggi Farmasi Indonesia</a> 
+      | All Rights Reserved | 
+      <a href="stfindonesia@gmail.com">stfindonesia@gmail.com</a> 
+      | 022-7566484 / 08112160354</strong>
     
     <!-- Section: Social media -->
     <center>

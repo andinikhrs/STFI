@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Inventaris extends Model
 {
+    protected $table = 'inventaris';
     use HasFactory;
-    public $fillable = ['noinventaris', 'namaalat', 'Merk', 'hargasatuan', 'jumlah', 'lokasi', 'kondisi', 'tahunpembuatan', 'usiabarang'] ;
-    public $timestamps = true;
+    public $guarded = ['id'];
 }

@@ -74,14 +74,28 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Kondisi</label>
-                                <input type="text" class="form-control  @error('kondisi') is-invalid @enderror"
-                                    name="kondisi">
-                                @error('kondisi')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+                                <div class="form-check">
+                                    <input class="form-check-input @error('kondisi') is-invalid @enderror"
+                                        type="radio" name="kondisi" value="Ya">
+                                    <label class="form-check-label">
+                                        Ya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input @error('kondisi') is-invalid @enderror"
+                                        type="radio" name="kondisi" value="Tidak">
+                                    <label class="form-check-label">
+                                        Tidak
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input @error('kondisi') is-invalid @enderror"
+                                        type="radio" name="kondisi" value="kurang">
+                                    <label class="form-check-label">
+                                        Kurang
+                                    </label>
+                                </div>
+                                <br>
                             <div class="mb-3">
                                 <label class="form-label">Tahun Pembuatan</label>
                                 <input type="date" class="form-control  @error('tahunpembuatan') is-invalid @enderror"
@@ -93,7 +107,7 @@
                                 @enderror
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Barang Layak Atau Tidak</label>
+                                <label class="form-label">Usia Barang Layak Pakai / Tidak ?</label>
                                 <div class="form-check">
                                     <input class="form-check-input @error('usiabarang') is-invalid @enderror"
                                         type="radio" name="usiabarang" value="Ya">

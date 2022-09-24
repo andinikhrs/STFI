@@ -1,8 +1,13 @@
-<aside class="main-sidebar sidebar-primary-green elevation-4 text-light" style="background-color: #42855B;" >
+<aside class="main-sidebar sidebar-primary-green elevation-4 text-light" style="background-color: #0F3460;" >
   <!-- Brand Logo -->
+  <style>
+    p {
+	color: #000000;
+}
+  </style>
   <a href="index3.html" class="brand-link">
     <img src="{{asset('assets/dist/img/logostfi.png')}}" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
-    <span class="brand-text font-weight-light text-light" >𝐒𝐓𝐅𝐈</span>
+    <span class="brand-text font-weight-light text-light" >𝐒𝐓𝐅𝐈 | 𝐈𝐍𝐕𝐄𝐍𝐓𝐀𝐑𝐈𝐒</span>
   </a>
 
   <!-- Sidebar -->
@@ -17,654 +22,533 @@
       </div>
     </div>
 
-    <!-- SidebarSearch Form -->
-    <div class="form-inline">
-      <div class="input-group" data-widget="sidebar-search">
-        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-sidebar">
-            <i class="fas fa-search fa-fw"></i>
-          </button>
-        </div>
-      </div>
-    </div>
+    
+    
 
     <!-- Sidebar Menu -->
     <nav class="mt-2">
-      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+      <ul class="nav nav-pills nav-sidebar flex-column " data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
-        <li class="nav-item menu-open">
-          <a href="#" class="nav-link active">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
+        <li class="nav-item">
+          <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+            <img src="{{asset('assets/dist/img/invenn.png')}}" width="35px" alt="">
             <p>
-              Fitur
+             Inventaris
+            </p>
+          </a>
+        </li>
+
+        <!-- DROPDOWN FURNITURE -->
+        <li class="nav-item menu-open">
+          <a href="#" class="nav-link active" style="background-color: #839AA8">
+            <img src="{{asset('assets/dist/img/furniture.png')}}" width="35px" alt="">
+             <p>
+               Furniture
+               <i class="right fas fa-angle-left"></i>
+             </p>
+           </a>
+        </li>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <img src="{{asset('assets/dist/img/ac.png')}}" width="35px" alt="">
+              <p>AC</p>
+            </a>
+          </li>
+        </ul>
+        
+        <!-- DROPDOWN NAMA BARANG DAN ALAT -->
+        <li class="nav-item menu-open" >
+          <a href="#" class="nav-link active" style="background-color: #839AA8">
+           <img src="{{asset('assets/dist/img/inven.png')}}" width="35px" alt="">
+            <p>
+              Nama Barang &  Alat
               <i class="right fas fa-angle-left"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Inventaris</p>
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/ac.png')}}" width="35px" alt="">
+                <p>AC</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="#"class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Dashboard</p>
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/fingerprint.png')}}" width="35px" alt="">
+                <p>Alat Absensi Finger Print</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="./index3.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Dashboard v3</p>
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Any Cast</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Akrilik</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/hand-wash.png')}}" width="35px" alt="">
+                <p>Alat Cuci Tangan</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Busa</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/battery.png')}}" width="35px" alt="">
+                <p>Batrai</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Backdrop</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Back Wool</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Blower</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Box PVC 15 In STX 15 A</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/cctv.png')}}" width="35px" alt="">
+                <p>CCTV</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/cpu.png')}}" width="35px" alt="">
+                <p>CPU</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Coway HEVA</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/mirror.png')}}" width="35px" alt="">
+                <p>Cermin</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/thermometers.png')}}" width="35px" alt="">
+                <p>Cek Suhu</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/container.png')}}" width="35px" alt="">
+                <p>Container</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/cam.png')}}" width="35px" alt="">
+                <p>Camera</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/charger.png')}}" width="35px" alt="">
+                <p>Charger</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/trolley.png')}}" width="35px" alt="">
+                <p>Drawer Troley 3 Layers (troli makanan)</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Destop Switch 16 Poin</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/dispenser.png')}}" width="35px" alt="">
+                <p>Dispenser</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Exhauset Cosmos</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Extensen</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/cabinet.png')}}" width="35px" alt="">
+                <p>Filing Cabinet</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/hnd.png')}}" width="35px" alt="">
+                <p>Foldable Handtruck (Troli Barang)</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/fg.png')}}" width="35px" alt="">
+                <p>Figura Visi & Misi</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/godox.png')}}" width="35px" alt="">
+                <p>Godox</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/wk.png')}}" width="35px" alt="">
+                <p>HT</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/headsetg.png')}}" width="35px" alt="">
+                <p>Headset Gaming</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/hdmi.png')}}" width="35px" alt="">
+                <p>HDMI</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/jamdinding.png')}}" width="35px" alt="">
+                <p>Jam Dinding</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/jet.png')}}" width="35px" alt="">
+                <p>Jet Pam</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Jack Canon NT Hitam (Orange)</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/carpet.png')}}" width="35px" alt="">
+                <p>Karpet</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/kipas.png')}}" width="35px" alt="">
+                <p>Kipas</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/chair.png')}}" width="35px" alt="">
+                <p>Kursi</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/comp.png')}}" width="35px" alt="">
+                <p>Komputer</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/key.png')}}" width="35px" alt="">
+                <p>Kotak Kayu Tempat Kunci</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/lamp.png')}}" width="35px" alt="">
+                <p>Lampu</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Laptop</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/lem.png')}}" width="35px" alt="">
+                <p>Lemari</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/ly.png')}}" width="35px" alt="">
+                <p>Layar Infocus</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/tb.png')}}" width="35px" alt="">
+                <p>Meja</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/mc.png')}}" width="35px" alt="">
+                <p>Mesin</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/car.png')}}" width="35px" alt="">
+                <p>Mobil</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/mic.png')}}" width="35px" alt="">
+                <p>Mic</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/audi.png')}}" width="35px" alt="">
+                <p>Mixer</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/router.png')}}" width="35px" alt="">
+                <p>Microtick</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/moni.png')}}" width="35px" alt="">
+                <p>Monitor</p>
+              </a>
+            </li><li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/um.png')}}" width="35px" alt="">
+                <p>Payung</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/wb.png')}}" width="35px" alt="">
+                <p>Papan Tulis</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/pk.png')}}" width="35px" alt="">
+                <p>Penghancur Kertas</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>PABX</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/p.png')}}" width="35px" alt="">
+                <p>Projector</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/ter.png')}}" width="35px" alt="">
+                <p>Printer</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/rak.png')}}" width="35px" alt="">
+                <p>Rak</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/pasien.png')}}" width="35px" alt="">
+                <p>Ranjang Pasien</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/case.png')}}" width="35px" alt="">
+                <p>Show Case</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/st.png')}}" width="35px" alt="">
+                <p>Stand TV</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Selector</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/scan.png')}}" width="35px" alt="">
+                <p>Scanner</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
+                <p>Skat</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/sofa.png')}}" width="35px" alt="">
+                <p>Sofa</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/soc.png')}}" width="35px" alt="">
+                <p>Socket</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/card.png')}}" width="35px" alt="">
+                <p>Scandisk Extrem</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/tab.png')}}" width="35px" alt="">
+                <p>Tablet</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/tabung.png')}}" width="35px" alt="">
+                <p>Tabung Pemadam</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/tangga.png')}}" width="35px" alt="">
+                <p>Tangga</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/telephone.png')}}" width="35px" alt="">
+                <p>Telephone</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/terminal.png')}}" width="35px" alt="">
+                <p>Terminal Kabel</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/t.png')}}" width="35px" alt="">
+                <p>Tiang & Tongkat</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/toa.png')}}" width="35px" alt="">
+                <p>Toa</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/tower.png')}}" width="35px" alt="">
+                <p>Torent</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/tv.png')}}" width="35px" alt="">
+                <p>TV</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/tas.png')}}" width="35px" alt="">
+                <p>Tas</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/trip.png')}}" width="35px" alt="">
+                <p>Tripod</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/ups.png')}}" width="35px" alt="">
+                <p>UPS</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/webcam.png')}}" width="35px" alt="">
+                <p>Web Cam</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+                <img src="{{asset('assets/dist/img/w.png')}}" width="35px" alt="">
+                <p>Wireless Hitam</p>
               </a>
             </li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a href="pages/widgets.html" class="nav-link">
-            <i class="nav-icon fas fa-th"></i>
-            <p class="text-light">
-              Widgets
-              <span class="right badge badge-danger">New</span>
-            </p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-copy"></i>
-            <p class="text-light">
-              Layout Options
-              <i class="fas fa-angle-left right"></i>
-              <span class="badge badge-info right">6</span>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/layout/top-nav.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Top Navigation</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Top Navigation + Sidebar</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/layout/boxed.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Boxed</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/layout/fixed-sidebar.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Fixed Sidebar</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Fixed Sidebar <small>+ Custom Area</small></p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/layout/fixed-topnav.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Fixed Navbar</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/layout/fixed-footer.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Fixed Footer</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Collapsed Sidebar</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-chart-pie"></i>
-            <p class="text-light">
-              Charts
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/charts/chartjs.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">ChartJS</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/charts/flot.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Flot</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/charts/inline.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Inline</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/charts/uplot.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">uPlot</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-tree"></i>
-            <p class="text-light">
-              UI Elements
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/UI/general.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">General</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/icons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Icons</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/buttons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Buttons</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/sliders.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Sliders</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/modals.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Modals & Alerts</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/navbar.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Navbar & Tabs</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/timeline.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Timeline</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/ribbons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Ribbons</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-edit"></i>
-            <p class="text-light">
-              Forms
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/forms/general.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">General Elements</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/forms/advanced.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Advanced Elements</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/forms/editors.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Editors</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/forms/validation.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Validation</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-table"></i>
-            <p class="text-light">
-              Tables
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/tables/simple.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Simple Tables</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/tables/data.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">DataTables</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/tables/jsgrid.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">jsGrid</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-header">EXAMPLES</li>
-        <li class="nav-item">
-          <a href="pages/calendar.html" class="nav-link">
-            <i class="nav-icon far fa-calendar-alt"></i>
-            <p class="text-light">
-              Calendar
-              <span class="badge badge-info right">2</span>
-            </p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="pages/gallery.html" class="nav-link">
-            <i class="nav-icon far fa-image"></i>
-            <p class="text-light">
-              Gallery
-            </p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="pages/kanban.html" class="nav-link">
-            <i class="nav-icon fas fa-columns"></i>
-            <p class="text-light">
-              Kanban Board
-            </p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon far fa-envelope"></i>
-            <p class="text-light">
-              Mailbox
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/mailbox/mailbox.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Inbox</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/mailbox/compose.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Compose</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/mailbox/read-mail.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Read</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-book"></i>
-            <p class="text-light">
-              Pages
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/examples/invoice.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Invoice</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/profile.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Profile</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/e-commerce.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">E-commerce</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/projects.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Projects</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/project-add.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Project Add</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/project-edit.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Project Edit</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/project-detail.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Project Detail</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/contacts.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Contacts</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/faq.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">FAQ</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/contact-us.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Contact us</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon far fa-plus-square"></i>
-            <p class="text-light">
-              Extras
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">
-                  Login & Register v1
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="pages/examples/login.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p class="text-light">Login v1</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages/examples/register.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p class="text-light">Register v1</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages/examples/forgot-password.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p class="text-light">Forgot Password v1</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages/examples/recover-password.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p class="text-light">Recover Password v1</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">
-                  Login & Register v2
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="pages/examples/login-v2.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p class="text-light">Login v2</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages/examples/register-v2.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p class="text-light">Register v2</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages/examples/forgot-password-v2.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p class="text-light">Forgot Password v2</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages/examples/recover-password-v2.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p class="text-light">Recover Password v2</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/lockscreen.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Lockscreen</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/legacy-user-menu.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Legacy User Menu</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/language-menu.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Language Menu</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/404.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Error 404</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/500.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Error 500</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/pace.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Pace</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/blank.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Blank Page</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="starter.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Starter Page</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-search"></i>
-            <p class="text-light">
-              Search
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/search/simple.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Simple Search</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/search/enhanced.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Enhanced</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-header">MISCELLANEOUS</li>
-        <li class="nav-item">
-          <a href="iframe.html" class="nav-link">
-            <i class="nav-icon fas fa-ellipsis-h"></i>
-            <p class="text-light">Tabbed IFrame Plugin</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="https://adminlte.io/docs/3.1/" class="nav-link">
-            <i class="nav-icon fas fa-file"></i>
-            <p class="text-light">Documentation</p>
-          </a>
-        </li>
-        <li class="nav-header">MULTI LEVEL EXAMPLE</li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="fas fa-circle nav-icon"></i>
-            <p class="text-light">Level 1</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-circle"></i>
-            <p class="text-light">
-              Level 1
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Level 2</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">
-                  Level 2
-                  <i class="right fas fa-angle-left"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-dot-circle nav-icon"></i>
-                    <p class="text-light">Level 3</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-dot-circle nav-icon"></i>
-                    <p class="text-light">Level 3</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-dot-circle nav-icon"></i>
-                    <p class="text-light">Level 3</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p class="text-light">Level 2</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="fas fa-circle nav-icon"></i>
-            <p class="text-light">Level 1</p>
-          </a>
-        </li>
-        <li class="nav-header">LABELS</li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon far fa-circle text-danger"></i>
-            <p class="text-light">Important</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon far fa-circle text-warning"></i>
-            <p class="text-light">Warning</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon far fa-circle text-info"></i>
-            <p class="text-light">Informational</p>
-          </a>
-        </li>
+        
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

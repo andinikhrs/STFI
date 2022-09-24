@@ -26,20 +26,21 @@
                                         <th>Lokasi</th>
                                         <th>Kondisi</th>
                                         <th>Tahun Pembuatan</th>
-                                        <th>Usia Barang</th>
+                                        <th>Usia Barang Layak Pakai / Tidak ?</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @php $no = 1; @endphp
-                                    @foreach ($inventaris as $data)
+                                    @foreach ($inventaris as $index => $data)
                                         <tr>
-                                            <td>{{ $no++ }}</td>
+                                            <td>{{ $index + 1 }}</td>
                                             <td>{{ $data->namaalat }}</td>
                                             <td>{{ $data->Merk }}</td>
                                             <td>{{ $data->hargasatuan }}</td>
                                             <td>{{ $data->jumlah }}</td>
                                             <td>{{ $data->lokasi }}</td>
-                                            <td>{{ $data->kodisi }}</td>
+                                            <td>{{ $data->kondisi }}</td>
                                             <td>{{ date('d M Y', strtotime($data->tahunpembuatan)) }}</td>
                                             <td>{{ $data->usiabarang }}</td>
                                             <td>

@@ -14,7 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('inventaris', function (Blueprint $table) {
-            $table->id('noinventaris')->uniqe();
+            $table->id();
+            $table->integer('noinventaris')->uniqe();
             $table->string('namaalat');
             $table->string('Merk');
             $table->string('hargasatuan');

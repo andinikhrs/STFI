@@ -1,37 +1,170 @@
-<nav class="main-header navbar navbar-expand navbar-white navbar-green text-light" style="background-color: #90B77D;">
+<nav class="main-header navbar navbar-expand navbar-white navbar-green text-light" style="background-color: #0F3460;">
   <!-- Left navbar links -->
-  <ul class="navbar-nav">
+  <ul class="navbar-nav" style="word-spacing: 5px;">
     <li class="nav-item">
       <a class="nav-link" data-widget="pushmenu" href="#" role="button">
-        <img src="{{asset('assets/dist/img/dropdown.png' )}}" width="20px" alt="">
+        <style>
+          .container {
+            display: inline-block;
+            cursor: pointer;
+          }
+
+          .bar1, .bar2, .bar3 {
+            width: 30px;
+            height: 5px;
+            background-color: #839AA8;
+            margin: 5px 0;
+            transition: 0.4s;
+          }
+
+          .change .bar1 {
+            transform: translate(0, 11px) rotate(-45deg);
+          }
+
+          .change .bar2 {opacity: 0;}
+
+          .change .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+          }
+
+          /* INI CSS SEARCH */
+          
+          .topnav .search-container {
+            float: right;
+          }
+
+          .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+          }
+
+          .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #97D2EC;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+          }
+
+          .topnav .search-container button:hover {
+            background: #97D2EC;
+          }
+
+          @media screen and (max-width: 600px) {
+            .topnav .search-container {
+              float: none;
+            }
+            .topnav a, .topnav input[type=text], .topnav .search-container button {
+              float: none;
+              display: block;
+              text-align: left;
+              width: 100%;
+              margin: 0;
+              padding: 14px;
+            }
+            .topnav input[type=text] {
+              border: 1px solid #97D2EC;  
+            }
+          }
+
+          </style>
+          </head>
+          <body>
+
+          <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+
+          <script>
+          function myFunction(x) {
+            x.classList.toggle("change");
+          }
+          </script>
+    </a>
+    </li>
+    <li class="nav-item d-none d-sm-inline-block" style="text-align: center;">
+      <a href="home"  class="nav-link" style="text-decorations:none; color:white;" >
+        <img src="{{asset('assets/dist/img/h.png' )}}" width="30px" alt=""  >
+        𝐇𝐎𝐌𝐄
       </a>
     </li>
-    <li class="nav-item d-none d-sm-inline-block">
-      <a href="home"  class="nav-link" style="text-decorations:none; color:black;">
-        <img src="{{asset('assets/dist/img/home.png' )}}" width="20px" alt="">
-        Home
+  </ul>
+
+  <!-- Center navbar links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item dropdown ml-auto text-center">
+      <a class="nav-link dropdown-toggle" style="text-decorations:none; color:white;" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        𝐆𝐞𝐝𝐮𝐧𝐠 𝟏
       </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
     </li>
-    <li class="nav-item d-none d-sm-inline-block">
-      <a href="profil" class="nav-link" style="text-decorations:none; color:black;">
-        <img src="{{asset('assets/dist/img/logostfi.png' )}}" width="22px" alt="">
-        Profil
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" style="text-decorations:none; color:white;" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        𝐆𝐞𝐝𝐮𝐧𝐠 𝟐
       </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" style="text-decorations:none; color:white;" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        𝐆𝐞𝐝𝐮𝐧𝐠 𝟑
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" style="text-decorations:none; color:white;" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        𝐆𝐞𝐝𝐮𝐧𝐠 𝟒
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
     </li>
   </ul>
 
   <!-- Right navbar links -->
   <ul class="navbar-nav ml-auto">
-      
+
+    <li class="nav-item">
+      <div class="topnav">
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </li>
     <li class="nav-item">
      <a class="nav-link"  href="{{ route('logout') }}"
      onclick="event.preventDefault();
          document.getElementById('logout-form').submit();" role="button">
-       <img src="{{asset('assets/dist/img/enter.png' )}}" width="20px" alt="">
+       <img src="{{asset('assets/dist/img/logoutt.png' )}}" width="30px" alt="">
      </a>
      <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
          @csrf
      </form>
    </li>
+
  </ul>
+
 </nav>

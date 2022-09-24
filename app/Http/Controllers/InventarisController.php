@@ -32,8 +32,9 @@ class InventarisController extends Controller
     public function create()
     {
         //
-        $inventaris = Inventaris::all();
-        return view('inventaris.create', compact('inventaris'));
+        // $inventaris = Inventaris::all();
+        // return view('inventaris.create', compact('inventaris'));
+        return view('inventaris.create');
     }
 
     /**
