@@ -1,4 +1,4 @@
-<nav class="main-header navbar navbar-expand navbar-white navbar-green text-light" style="background-color: #0F3460;">
+<nav class="main-header navbar navbar-expand navbar-white navbar-green text-light" style="background-color: #0F3460; position:sticky; top: 0;">
   <!-- Left navbar links -->
   <ul class="navbar-nav" style="word-spacing: 5px;">
     <li class="nav-item">
@@ -12,7 +12,7 @@
           .bar1, .bar2, .bar3 {
             width: 30px;
             height: 5px;
-            background-color: #839AA8;
+            background-color: #97D2EC;
             margin: 5px 0;
             transition: 0.4s;
           }
@@ -104,9 +104,10 @@
         𝐆𝐞𝐝𝐮𝐧𝐠 𝟏
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
+        <a class="dropdown-item" href="#">Lantai 1</a>
+        <a class="dropdown-item" href="#">Lantai 2</a>
+        <a class="dropdown-item" href="#">Lantai 3</a>
+        <a class="dropdown-item" href="#">Lantai 4</a>
       </div>
     </li>
     <li class="nav-item dropdown">
@@ -114,9 +115,10 @@
         𝐆𝐞𝐝𝐮𝐧𝐠 𝟐
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
+        <a class="dropdown-item" href="#">Lantai 1</a>
+        <a class="dropdown-item" href="#">Lantai 2</a>
+        <a class="dropdown-item" href="#">Lantai 3</a>
+        <a class="dropdown-item" href="#">Lantai 4</a>
       </div>
     </li>
     <li class="nav-item dropdown">
@@ -124,9 +126,10 @@
         𝐆𝐞𝐝𝐮𝐧𝐠 𝟑
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
+        <a class="dropdown-item" href="#">Basement</a>
+        <a class="dropdown-item" href="#">Lantai 1</a>
+        <a class="dropdown-item" href="#">Lantai 2</a>
+        <a class="dropdown-item" href="#">Lantai 3</a>
       </div>
     </li>
     <li class="nav-item dropdown">
@@ -134,9 +137,7 @@
         𝐆𝐞𝐝𝐮𝐧𝐠 𝟒
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
+        <a class="dropdown-item" href="#">Apoteker</a>
       </div>
     </li>
   </ul>

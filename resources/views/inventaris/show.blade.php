@@ -11,27 +11,27 @@
                     </div>
                     <div class="card-body">
                         <div class="mb-3">
-                            <label class="form-label">No</label>
-                            <input type="text" class="form-control " name="noinventaris" value="{{ $inventaris->noinventaris }}" readonly>
+                            <label class="form-label">Kode</label>
+                            <input type="text" class="form-control " name="kode" value="{{ $inventaris->kode }}" readonly>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Nama Alat</label>
-                            <input type="text" class="form-control " name="namaalat" value="{{ $inventaris->namaalat }}" readonly>
+                            <label class="form-label">Nama Barang</label>
+                            <input type="text" class="form-control " name="namaBarang" value="{{ $inventaris->namaBarang }}" readonly>
                         </div>
                         
                         <div class="mb-3">
-                            <label class="form-label">Merk</label>
-                            <input type="text" class="form-control " name="noinventaris" value="{{ $inventaris->Merk }}"
-                                readonly>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Harga Satuan</label>
-                            <input type="text" class="form-control " name="noinventaris" value="{{ $inventaris->hargasatuan }}"
+                            <label class="form-label">merk</label>
+                            <input type="text" class="form-control " name="kode" value="{{ $inventaris->merk }}"
                                 readonly>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Jumlah</label>
-                            <input type="text" class="form-control" name="jumlah" value="{{ $inventaris->jumlah }}"
+                            <input type="text" class="form-control " name="kode" value="{{ $inventaris->jumlah }}"
+                                readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Harga Satuan</label>
+                            <input type="text" class="form-control" name="hargaSatuan" value="{{ $inventaris->hargaSatuan }}"
                                 readonly>
 
                         </div>
@@ -41,18 +41,23 @@
 
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Kondisi</label>
-                            <textarea class="form-control" name="kondisi" readonly>{{ $inventaris->kondisi }}</textarea>
-
-                        </div>
-                        <div class="mb-3">
                             <label class="form-label">Tahun Pembuatan</label>
-                            <textarea class="form-control" name="tahunpembuatan" readonly>{{ $inventaris->tahunpembuatan }}</textarea>
+                            <textarea class="form-control" name="tahunPembuatan" readonly>{{ $inventaris->tahunPembuatan }}</textarea>
 
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Usia Barang Layak Pakai / Tidak ?</label>
-                            <textarea class="form-control" name="usiabarang" readonly>{{ $inventaris->usiabarang }}</textarea>
+                            <label class="form-label">Tahun Belli</label>
+                            <textarea class="form-control" name="tahunBeli" readonly>{{ $inventaris->tahunBeli }}</textarea>
+
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Harga Keseluruhan</label>
+                            <textarea class="form-control" name="hargaKeseluruhan" readonly>{{ $inventaris->hargaKeseluruhan }}</textarea>
+
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Kondisi</label>
+                            <textarea class="form-control" name="kondisi" readonly>{{ $inventaris->kondi}}</textarea>
 
                         </div>
                         <div class="mb-3">

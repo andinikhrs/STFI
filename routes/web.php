@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InventarisController;
+use App\Http\Controllers\ACController;
 
 
 /*
@@ -43,3 +44,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('inventaris', InventarisController::class);
+Route::resource('ac', ACController::class);

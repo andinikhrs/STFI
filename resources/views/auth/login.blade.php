@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> STFI | Log In Page</title>
   <link href="{{asset('assets/dist/img/logostfi.png')}}" rel="shortcut icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -67,7 +69,7 @@
           <!-- /.col -->
           <div align="center">
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block" >Masuk</button>
+            <button type="submit" class="btn btn-outline-success" onclick="showSwal('success-message')">Masuk</button>
           </div>
           
         </div>

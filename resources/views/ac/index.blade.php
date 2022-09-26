@@ -7,8 +7,8 @@
                 @include('layouts/_flash')
                 <div class="card" >
                     <div class="card-header">
-                        Data inventaris
-                        <a href="{{ route('inventaris.create') }}" class="btn btn-sm btn-primary" style="float: right">
+                        Data Inventaris
+                        <a href="{{ route('ac.create') }}" class="btn btn-sm btn-primary" style="float: right">
                             Tambah Data
                         </a>
                     </div>
@@ -34,7 +34,7 @@
                                 </thead>
                                 <tbody>
                                     @php $no = 1; @endphp
-                                    @foreach ($inventaris as $index => $data)
+                                    @foreach ($ac as $index => $data)
                                         <tr>
                                             <td>{{ $index + 1 }}</td>
                                             <td>{{ $data->kode }}</td>
@@ -48,14 +48,14 @@
                                             <td>{{ $data->hargaKeseluruhan }}</td> 
                                             <td>{{ $data->kondisi }}</td>
                                             <td>
-                                                <form action="{{ route('inventaris.destroy', $data->id) }}" method="post">
+                                                <form action="{{ route('ac.destroy', $data->id) }}" method="post">
                                                     @csrf
                                                     @method('delete')
-                                                    <a href="{{ route('inventaris.edit', $data->id) }}"
+                                                    <a href="{{ route('ac.edit', $data->id) }}"
                                                         class="btn btn-sm btn-outline-success">
                                                         <i class="bi bi-pencil-fill"></i>
                                                     </a>
-                                                    <a href="{{ route('inventaris.show', $data->id) }}"
+                                                    <a href="{{ route('ac.show', $data->id) }}"
                                                         class="btn btn-sm btn-outline-warning">
                                                         <i class="bi bi-info-lg"></i>
                                                     </a>

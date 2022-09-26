@@ -39,7 +39,7 @@
           </a>
         </li>
 
-        <!-- DROPDOWN FURNITURE -->
+        {{-- <!-- DROPDOWN FURNITURE -->
         <li class="nav-item menu-open">
           <a href="#" class="nav-link active" style="background-color: #839AA8">
             <img src="{{asset('assets/dist/img/furniture.png')}}" width="35px" alt="">
@@ -51,12 +51,12 @@
         </li>
         <ul class="nav nav-treeview">
           <li class="nav-item">
-            <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+            <a href="{{ route('ac.index') }}" class="nav-link active" style="background-color: #839AA8">
               <img src="{{asset('assets/dist/img/ac.png')}}" width="35px" alt="">
               <p>AC</p>
             </a>
           </li>
-        </ul>
+        </ul> --}}
         
         <!-- DROPDOWN NAMA BARANG DAN ALAT -->
         <li class="nav-item menu-open" >
@@ -69,7 +69,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <a href="{{ route('ac.index') }}" class="nav-link active" style="background-color: #839AA8">
                 <img src="{{asset('assets/dist/img/ac.png')}}" width="35px" alt="">
                 <p>AC</p>
               </a>

@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Inventaris;
+use App\Models\AC;
 use Illuminate\Http\Request;
 
-class InventarisController extends Controller
+class ACController extends Controller
 {
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -19,9 +20,9 @@ class InventarisController extends Controller
      */
     public function index()
     {
-        //menampilkan semua data dari model inventaris
-        $inventaris = Inventaris::all();
-        return view('inventaris.index', compact('inventaris'));
+        //menampilkan semua data dari model ac
+        $ac = AC::where('namaBarang', 'AC')->get();
+        return view('ac.index', compact('ac'));
     }
 
     /**
@@ -31,8 +32,7 @@ class InventarisController extends Controller
      */
     public function create()
     {
-        //
-        return view('inventaris.create');
+        return view('ac.create');
     }
 
     /**
@@ -45,7 +45,7 @@ class InventarisController extends Controller
     {
         // validasi
         $validated = $request->validate([
-            'kode' => 'required|unique:inventaris', 
+            'kode' => 'required|unique:ac',
             'namaBarang' => 'required',
             'merk' => 'required',
             'jumlah' => 'required',
@@ -56,58 +56,57 @@ class InventarisController extends Controller
             'kondisi' => 'required',
         ]);
 
-        $inventaris = new Inventaris();
-        $inventaris->kode = $request->kode;
-        $inventaris->namaBarang = $request->namaBarang;
-        $inventaris->merk = $request->merk;
-        $inventaris->jumlah = $request->jumlah;
-        $inventaris->hargaSatuan = $request->hargaSatuan;
-        $inventaris->lokasi = $request->lokasi;
-        $inventaris->tahunPembuatan = $request->tahunPembuatan;
-        $inventaris->tahunBeli = $request->tahunBeli;
-        $inventaris->hargaKeseluruhan = $inventaris->jumlah * $inventaris->hargaSatuan;
-        $inventaris->kondisi = $request->kondisi;
-        $inventaris->save();
-        return redirect()->route('inventaris.index')
+        $ac = new AC();
+        $ac->kode = $request->kode;
+        $ac->namaBarang = $request->namaBarang;
+        $ac->merk = $request->merk;
+        $ac->jumlah = $request->jumlah;
+        $ac->hargaSatuan = $request->hargaSatuan;
+        $ac->lokasi = $request->lokasi;
+        $ac->tahunPembuatan = $request->tahunPembuatan;
+        $ac->tahunBeli = $request->tahunBeli;
+        $ac->hargaKeseluruhan = $ac->jumlah * $ac->hargaSatuan;
+        $ac->kondisi = $request->kondisi;
+        $ac->save();
+        return redirect()->route('ac.index')
             ->with('success', 'Data berhasil dibuat!');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\AC  $ac
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        $inventaris = Inventaris::findOrFail($id);
-        return view('inventaris.show', compact('inventaris'));
+        $ac = AC::findOrFail($id);
+        return view('ac.show', compact('ac'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\AC  $aC
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $inventaris = Inventaris::findOrFail($id);
-        return view('inventaris.edit', compact('inventaris'));
+        $ac = AC::findOrFail($id);
+        return view('ac.edit', compact('ac'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\AC  $aC
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        // Validasi
         $validated = $request->validate([
-            'kode' => 'required|unique:inventaris',
+            'kode' => 'required|unique:ac',
             'namaBarang' => 'required',
             'merk' => 'required',
             'jumlah' => 'required',
@@ -118,34 +117,33 @@ class InventarisController extends Controller
             'kondisi' => 'required',
         ]);
 
-        $inventaris = Inventaris::findOrFail($id);
-        $inventaris->kode = $request->kode;
-        $inventaris->namaBarang = $request->namaBarang;
-        $inventaris->merk = $request->merk;
-        $inventaris->jumlah = $request->jumlah;
-        $inventaris->hargaSatuan = $request->hargaSatuan;
-        $inventaris->lokasi = $request->lokasi;
-        $inventaris->tahunPembuatan = $request->tahunPembuatan;
-        $inventaris->tahunBeli = $request->tahunBeli;
-        $inventaris->hargaKeseluruhan = $inventaris->jumlah * $inventaris->hargaSatuan;
-        $inventaris->kondisi = $request->kondisi;
-        $inventaris->save();
-        return redirect()->route('inventaris.index')
+        $ac = AC::findOrFail($id);
+        $ac->kode = $request->kode;
+        $ac->namaBarang = $request->namaBarang;
+        $ac->merk = $request->merk;
+        $ac->jumlah = $request->jumlah;
+        $ac->hargaSatuan = $request->hargaSatuan;
+        $ac->lokasi = $request->lokasi;
+        $ac->tahunPembuatan = $request->tahunPembuatan;
+        $ac->tahunBeli = $request->tahunBeli;
+        $ac->hargaKeseluruhan = $ac->jumlah * $ac->hargaSatuan;
+        $ac->kondisi = $request->kondisi;
+        $ac->save();
+        return redirect()->route('ac.index')
             ->with('success', 'Data berhasil diedit!');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\AC  $aC
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $inventaris = Inventaris::findOrFail($id);
-        $inventaris->delete();
-        return redirect()->route('inventaris.index')
+        $ac = AC::findOrFail($id);
+        $ac->delete();
+        return redirect()->route('ac.index')
             ->with('success', 'Data berhasil dihapus!');
     }
-    
 }
