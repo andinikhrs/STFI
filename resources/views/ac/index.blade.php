@@ -8,9 +8,6 @@
                 <div class="card" >
                     <div class="card-header">
                         Data Inventaris
-                        <a href="{{ route('ac.create') }}" class="btn btn-sm btn-primary" style="float: right">
-                            Tambah Data
-                        </a>
                     </div>
 
                     {{-- <div class="card-body"> --}}
@@ -51,17 +48,10 @@
                                                 <form action="{{ route('ac.destroy', $data->id) }}" method="post">
                                                     @csrf
                                                     @method('delete')
-                                                    <a href="{{ route('ac.edit', $data->id) }}"
-                                                        class="btn btn-sm btn-outline-success">
-                                                        <i class="bi bi-pencil-fill"></i>
-                                                    </a>
                                                     <a href="{{ route('ac.show', $data->id) }}"
                                                         class="btn btn-sm btn-outline-warning">
                                                         <i class="bi bi-info-lg"></i>
                                                     </a>
-                                                    <button type="submit" class="btn btn-sm btn-outline-danger"
-                                                        onclick="return confirm('Apakah Anda Yakin?')"><i class="bi bi-trash-fill"></i>
-                                                    </button>
                                                 </form>
                                             </td>
                                         </tr>

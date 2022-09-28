@@ -46,7 +46,7 @@
 
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Tahun Belli</label>
+                            <label class="form-label">Tahun Beli</label>
                             <textarea class="form-control" name="tahunBeli" readonly>{{ $inventaris->tahunBeli }}</textarea>
 
                         </div>
@@ -57,7 +57,7 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Kondisi</label>
-                            <textarea class="form-control" name="kondisi" readonly>{{ $inventaris->kondi}}</textarea>
+                            <textarea class="form-control" name="kondisi" readonly>{{ $inventaris->kondisi}}</textarea>
 
                         </div>
                         <div class="mb-3">

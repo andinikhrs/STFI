@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\AC;
+use App\Models\Inventaris;
 use Illuminate\Http\Request;
 
 class ACController extends Controller
@@ -21,7 +22,7 @@ class ACController extends Controller
     public function index()
     {
         //menampilkan semua data dari model ac
-        $ac = AC::where('namaBarang', 'AC')->get();
+        $ac = Inventaris::where('namaBarang', 'AC')->get();
         return view('ac.index', compact('ac'));
     }
 
