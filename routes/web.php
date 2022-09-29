@@ -55,7 +55,18 @@ use App\Http\Controllers\MonitorController;
 use App\Http\Controllers\PayungController;
 use App\Http\Controllers\PapanTulisController;
 use App\Http\Controllers\PenghancurKertasController;
-
+use App\Http\Controllers\PABXController;
+use App\Http\Controllers\ProjectorController;
+use App\Http\Controllers\PrinterController;
+use App\Http\Controllers\RakController;
+use App\Http\Controllers\RanjangPasienController;
+use App\Http\Controllers\ShowCaseController;
+use App\Http\Controllers\StandTvController;
+use App\Http\Controllers\SelectorController;
+use App\Http\Controllers\ScannerController;
+use App\Http\Controllers\SkatController;
+use App\Http\Controllers\SofaController;
+use App\Http\Controllers\SocketController;
 
 
 
@@ -152,5 +163,16 @@ Route::resource('monitor',MonitorController::class);
 Route::resource('payung',PayungController::class);
 Route::resource('papantulis',PapanTulisController::class);
 Route::resource('penghancurkertas',PenghancurKertasController::class);
-
+Route::resource('pabx',PABXController::class);
+Route::resource('projector',ProjectorController::class);
+Route::resource('printer',PrinterController::class);
+Route::resource('rak',RakController::class);
+Route::resource('ranjangpasien',RanjangPasienController::class);
+Route::resource('showcase',ShowCaseController::class);
+Route::resource('standtv',StandTvController::class);
+Route::resource('selector',SelectorController::class);
+Route::resource('scanner',ScannerController::class);
+Route::resource('skat',SkatController::class);
+Route::resource('sofa',SofaController::class);
+Route::resource('socket',SocketController::class);
 

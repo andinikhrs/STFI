@@ -386,73 +386,73 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <a href="{{ route('pabx.index') }}" class="nav-link active" style="background-color: #839AA8">
                 <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
                 <p>PABX</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <a href="{{ route('projector.index') }}" class="nav-link active" style="background-color: #839AA8">
                 <img src="{{asset('assets/dist/img/p.png')}}" width="35px" alt="">
                 <p>Projector</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <a href="{{ route('printer.index') }}" class="nav-link active" style="background-color: #839AA8">
                 <img src="{{asset('assets/dist/img/ter.png')}}" width="35px" alt="">
                 <p>Printer</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <a href="{{ route('rak.index') }}" class="nav-link active" style="background-color: #839AA8">
                 <img src="{{asset('assets/dist/img/rak.png')}}" width="35px" alt="">
                 <p>Rak</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <a href="{{ route('ranjangpasien.index') }}" class="nav-link active" style="background-color: #839AA8">
                 <img src="{{asset('assets/dist/img/pasien.png')}}" width="35px" alt="">
                 <p>Ranjang Pasien</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <a href="{{ route('showcase.index') }}" class="nav-link active" style="background-color: #839AA8">
                 <img src="{{asset('assets/dist/img/case.png')}}" width="35px" alt="">
                 <p>Show Case</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <a href="{{ route('standtv.index') }}" class="nav-link active" style="background-color: #839AA8">
                 <img src="{{asset('assets/dist/img/st.png')}}" width="35px" alt="">
                 <p>Stand TV</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <a href="{{ route('selector.index') }}" class="nav-link active" style="background-color: #839AA8">
                 <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
                 <p>Selector</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <a href="{{ route('scanner.index') }}" class="nav-link active" style="background-color: #839AA8">
                 <img src="{{asset('assets/dist/img/scan.png')}}" width="35px" alt="">
                 <p>Scanner</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <a href="{{ route('skat.index') }}" class="nav-link active" style="background-color: #839AA8">
                 <img src="{{asset('assets/dist/img/laptop.png')}}" width="35px" alt="">
                 <p>Skat</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <a href="{{ route('sofa.index') }}" class="nav-link active" style="background-color: #839AA8">
                 <img src="{{asset('assets/dist/img/sofa.png')}}" width="35px" alt="">
                 <p>Sofa</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('inventaris.index') }}" class="nav-link active" style="background-color: #839AA8">
+              <a href="{{ route('socket.index') }}" class="nav-link active" style="background-color: #839AA8">
                 <img src="{{asset('assets/dist/img/soc.png')}}" width="35px" alt="">
                 <p>Socket</p>
               </a>
